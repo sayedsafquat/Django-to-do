@@ -17,8 +17,8 @@ jobs:
       run: |
         git config --global user.name 'sayedsafquat'
         git config --global user.email 'safquat615@gmail.com'
-        # git checkout gh-pages
+        git checkout -b gh-pages
         # Replace 'public' with the actual folder containing your HTML page if needed.
         git add .
         git commit -m 'Deploy to GitHub Pages'
-        git push origin main
+        git push origin gh-pages
